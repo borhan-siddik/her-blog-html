@@ -1,0 +1,157 @@
+/* Start of Custom fonts */
+@font-face {
+    font-family: 'League Spartan';
+    src: url('fonts/LeagueSpartan/LeagueSpartan-Extralight.woff2') format('woff2'),
+        url('/fonts/LeagueSpartan/LeagueSpartan-Extralight.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('/fonts/LeagueSpartan-bold/LeagueSpartan-Bold.woff2') format('woff2'),
+        url('/fonts/LeagueSpartan-bold/LeagueSpartan-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Swis721 Cn BT';
+    src: url('Swiss721BT-BoldCondensed.woff2') format('woff2'),
+        url('Swiss721BT-BoldCondensed.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+/* End of Custom fonts */
+
+/* Start of Global Variables */
+:root {
+	--her-red: #D92A1D;
+	--her-grey: #68666B;
+	--her-black: #030505;
+}
+/* End of Global Variables */
+
+/* Start of Global Styles */
+body.page-template-template-blog {
+	background: linear-gradient(180deg, rgba(237, 217, 171, 0.55) 0%, rgba(237, 198, 171, 0.55) 7.59%, rgba(237, 171, 193, 0.55) 17.88%, rgba(171, 192, 237, 0.55) 30.89%, rgba(171, 235, 237, 0.55) 43.9%, rgba(171, 197, 237, 0.55) 56.36%, rgba(195, 171, 237, 0.55) 68.29%, rgba(237, 171, 193, 0.55) 80.75%, rgba(237, 198, 171, 0.55) 92.13%, rgba(237, 217, 171, 0.55) 104.05%), #FFFFFF;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 2000px;
+	font-family: 'League Spartan', sans-serif!important;
+}
+
+.container {
+	max-width: 1070px;
+}
+
+.cat-btn {
+	font-weight: bold;
+	font-size: 14px;	
+	color: var(--her-grey);
+	padding: 12px 18px;
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 4px;
+	margin: 4px;
+	outline: none;
+	border: none;
+	text-decoration: none!important;
+}
+
+.cat-btn:hover {
+	background: #030505;
+	box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.04), 0px 2px 4px rgba(96, 97, 112, 0.16);
+	color: #fff;
+}
+
+.bs-flex-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+/* End of Global Styles */
+
+
+/* Start of Header and Navigation styles */
+.custom-blog-header {
+	border-bottom: 1px solid #68666ba8;
+}
+
+.custom-blog-header .navbar{
+	min-height: 96px;
+	background-color: transparent;
+	margin: 0;
+	max-width: 1070px;
+	margin: 0 auto;
+}
+
+.custom-blog-header .navbar-nav li a, .custom-blog-header .navbar-nav li:hover a, .custom-blog-header .navbar-nav li.active a,
+.custom-blog-header .navbar-nav li.active:hover a
+{
+	background-color: unset;
+	margin-left: 32px;
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 600;
+	color: var(--her-grey);
+}
+
+.custom-blog-header .navbar-nav li.active a, .custom-blog-header .navbar-nav li.active:hover a {
+	color: var(--her-red);
+}
+
+.custom-blog-header .navbar-nav li:hover a {
+	background-color: unset;
+	color: var(--her-red);
+	border-bottom: 3px solid var(--her-red);
+}
+
+.custom-blog-header .navbar-default .navbar-collapse {
+	min-height: 96px!important;
+	border: unset;
+	position:relative;
+}
+
+.custom-blog-header .navbar-nav {
+	margin-top: 22px;
+	margin-bottom: 22px;
+}
+/* End of Header and Navigation styles */
+
+/* Start of Top Section styles */
+.bs-top-section {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+.bs-top-section h1 {
+	color: #000;
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 56px;
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+/* End of Top Section styles */
+
+/* Start of Media Queries */
+/* Extra Small (xs) devices */
+@media(max-width:767px) {
+	.custom-blog-header .navbar-nav li a, .custom-blog-header .navbar-nav li:hover a, .custom-blog-header .navbar-nav li.active a, .custom-blog-header .navbar-nav li.active:hover a {
+		margin-left: 0;
+		border-bottom: unset;
+		padding-top: 13px;
+		padding-bottom: 13px;
+		font-size: 18px;
+	}
+	.custom-blog-header .navbar-nav {
+		margin-top: 44px;
+		margin-bottom: 22px;
+	}
+}
