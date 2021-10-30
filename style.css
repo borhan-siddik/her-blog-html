@@ -80,7 +80,7 @@ body.page-template-template-blog {
 
 /* Start of Header and Navigation styles */
 .custom-blog-header {
-	border-bottom: 1px solid #68666ba8;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.233);
 }
 
 .custom-blog-header .navbar{
@@ -106,10 +106,9 @@ body.page-template-template-blog {
 	color: var(--her-red);
 }
 
-.custom-blog-header .navbar-nav li:hover a {
+.custom-blog-header .navbar-nav li:hover a, .custom-blog-header .navbar-nav li.active a {
 	background-color: unset;
 	color: var(--her-red);
-	border-bottom: 3px solid var(--her-red);
 }
 
 .custom-blog-header .navbar-default .navbar-collapse {
@@ -153,5 +152,8 @@ body.page-template-template-blog {
 	.custom-blog-header .navbar-nav {
 		margin-top: 44px;
 		margin-bottom: 22px;
+	}
+	.navbar-default .navbar-toggle {
+		margin-top: 30px;
 	}
 }
