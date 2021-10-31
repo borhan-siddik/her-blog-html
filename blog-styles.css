@@ -368,7 +368,7 @@
 	}
 
 	.bs-hero-card .caro-card-footer {
-		padding: 30px;
+		padding: 25px;
 	}
 
 	.bs-hero-card .carousel-inner .item a > img {
@@ -444,6 +444,13 @@
 	.custom-blog-footer h4 {
 		font-size: 15px;
 		line-height: 20px;
+	}
+	.bs-blog-section .post-card-footer {
+		padding: 25px;
+	}
+	.bs-hero-card .carousel-indicators {
+		right: -15%;
+		bottom: 2.8%;
 	}
 }
 
