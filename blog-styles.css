@@ -345,6 +345,27 @@
 	.navbar-default .navbar-toggle {
 		margin-top: 30px;
 	}
+
+	.bs-blog-categories {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: start;
+		overflow: auto;
+	}
+
+	.bs-blog-categories::-webkit-scrollbar {
+		display: none;
+	  }
+
+	.bs-blog-categories {
+		-ms-overflow-style: none; 
+		scrollbar-width: none;
+	}
+
+	.bs-blog-categories .cat-btn {
+		white-space: nowrap;
+	}
+
 	.distributed-padding {
 		float: none;
 		margin: 0 auto;
