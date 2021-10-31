@@ -5,13 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	
-	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">	
+	<link rel="stylesheet" href="blog-styles.css">	
 </head>
-<body class="page-template-template-blog">
-	<header class="custom-blog-header"><!-- Start Header -->
+<body class="bs-blog-archive">
+
+	<header class="custom-blog-header"><!-- Start of Header -->
 		<nav class="navbar navbar-default" role="navigation">
 			  <!-- Brand and toggle get grouped for better mobile display -->
 			  <div class="navbar-header">
@@ -35,33 +34,29 @@
 				</ul>
 			  </div><!-- /.navbar-collapse -->
 		  </nav>
-	</header><!-- End Header -->
+	</header><!-- End of Header -->
 
-	<!-- Start of Top Section -->
-	<section class="bs-top-section">
+	<section class="bs-top-section"><!-- Start of Top Section -->
 		<div class="container">
 			<h1>HER Blog</h1>
 			<div class="bs-blog-categories">
-				<div class="bs-flex-row justify-content-center">
-					<a class="cat-btn" href="#">Category name</a>
-					<a class="cat-btn" href="#">Category name</a>
-					<a class="cat-btn" href="#">Category name</a>
-					<a class="cat-btn" href="#">Category name</a>
-					<a class="cat-btn" href="#">Category name</a>
-					<a class="cat-btn" href="#">Category name</a>
-					<a class="cat-btn" href="#">Category name</a>
-					<a class="cat-btn" href="#">Category name</a>
-					<a class="cat-btn" href="#">Category name</a>
-					<a class="cat-btn" href="#">Category name</a>
-					<a class="cat-btn" href="#">Category name</a>
-					<a class="cat-btn" href="#">Category name</a>
-				</div>
+				<a class="cat-btn" href="#">Category name</a>
+				<a class="cat-btn" href="#">Category name</a>
+				<a class="cat-btn" href="#">Category name</a>
+				<a class="cat-btn" href="#">Category name</a>
+				<a class="cat-btn" href="#">Category name</a>
+				<a class="cat-btn" href="#">Category name</a>
+				<a class="cat-btn" href="#">Category name</a>
+				<a class="cat-btn" href="#">Category name</a>
+				<a class="cat-btn" href="#">Category name</a>
+				<a class="cat-btn" href="#">Category name</a>
+				<a class="cat-btn" href="#">Category name</a>
+				<a class="cat-btn" href="#">Category name</a>
 			</div>
 		</div>
-	</section>
-	<!-- End of Top Section -->
+	</section><!-- End of Top Section -->
 	
-	<section class="bs-hero-card">
+	<section class="bs-hero-card"><!-- Start of Hero Card Section -->
 		<div class="container"> 
 			<div id="bsCarousel" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
@@ -76,7 +71,7 @@
 				<div class="item active">
 				  <img src="./img/hero-bg-1.png" alt="Los Angeles">
 				  <div class="caro-card-footer">
-					<ul class="list-inline cat-rt">
+					  <ul class="list-inline cat-rt">
 						<li><a href="#">Category</a></li>
 						<li>Read time</li>
 					  </ul>
@@ -119,23 +114,25 @@
 		  
 			  <!-- Left and right controls -->
 			  <a class="left carousel-control" href="#bsCarousel" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
+				<!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
+				<img src="./img/left-caro-icon.svg" alt="">
 				<span class="sr-only">Previous</span>
 			  </a>
 			  <a class="right carousel-control" href="#bsCarousel" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
+				<!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
+				<img src="./img/right-caro-icon.svg" alt="">
 				<span class="sr-only">Next</span>
 			  </a>
 			</div>
 		  </div>
-	</section>
+	</section><!-- End of Hero Card Section -->
 
-	<section class="bs-blog-section">
+	<section class="bs-blog-section"><!-- Start of Blog Section -->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 distributed-padding">
 					<div class="post-inner">
-						  <img src="./img/hero-bg-1.png" alt="Los Angeles">
+						  <img src="./img/blog-card-1.png" alt="Los Angeles">
 						  <div class="post-card-footer">
 							<ul class="list-inline cat-rt">
 								<li><a href="#">Category</a></li>
@@ -151,7 +148,23 @@
 				</div>
 				<div class="col-sm-6 distributed-padding">
 					<div class="post-inner">
-						  <img src="./img/hero-bg-1.png" alt="Los Angeles">
+						  <img src="./img/blog-card-2.png" alt="Los Angeles">
+						  <div class="post-card-footer">
+							<ul class="list-inline cat-rt">
+								<li><a href="#">Category</a></li>
+								<li>Read time</li>
+							  </ul>
+							  <h2>Your guide to Los Angeles pride 2021</h2>
+							  <ul class="list-inline auth-date">
+								<li><a href="#">Author name</a></li>
+								<li><a href="#">Date</a></li>
+							  </ul>
+						  </div>
+					</div>
+				</div>
+				<div class="col-sm-12 distributed-padding make-it-hero">
+					<div class="post-inner">
+						  <img src="./img/blog-hero-card.jpg" alt="Los Angeles">
 						  <div class="post-card-footer">
 							<ul class="list-inline cat-rt">
 								<li><a href="#">Category</a></li>
@@ -167,7 +180,7 @@
 				</div>
 				<div class="col-sm-6 distributed-padding">
 					<div class="post-inner">
-						  <img src="./img/hero-bg-1.png" alt="Los Angeles">
+						  <img src="./img/blog-card-3.png" alt="Los Angeles">
 						  <div class="post-card-footer">
 							<ul class="list-inline cat-rt">
 								<li><a href="#">Category</a></li>
@@ -196,10 +209,74 @@
 							  </ul>
 						  </div>
 						</div>
+				</div>
+				<div class="col-sm-12 text-center load-btn-col">
+					<button id="load-more-post">Load More</button>
 				</div>
 			</div>
 		</div>
-	</section>
+	</section><!-- End of Blog Section -->
+
+	<section class="newsletter-section"><!-- Start of Newsletter Section-->
+		<div class="container text-center">
+			<h3>Newsletter Sign Up</h3>
+			<form action="" class="form-inline">
+				<div class="form-group">
+					<input type="email" class="form-control"><button type="submit" class="mail-submit-btn"><img src="./img/mail-icon.png" alt=""></button>
+				</div>
+			</form>
+		</div>
+	</section><!-- End of Newsletter Section-->
+
+	<footer class="custom-blog-footer"><!-- Start of footer -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-md-3">
+					<img src="./img/logo.png" alt="">
+					<p>The blog landing page and template for individual posts page should be mobile first, but extensible to desktop. We are looking for designs for both desktop and mobile.</p>
+					<a href="#" class="app-down-btn"><img src="./img/download-icon.png" alt="" style="margin-right: 8px;"> HER App</a>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3">
+					<h4>About us</h4>
+					<ul class="list-group">
+						<li class="list-group-item">About HER</li>
+						<li class="list-group-item">Partnership</li>
+						<li class="list-group-item">Affiliate program</li>
+						<li class="list-group-item">Queer blog</li>
+						<li class="list-group-item">Download HER</li>
+						<li class="list-group-item">Tinder vs HER</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3">
+					<h4>HER for all</h4>
+					<ul class="list-group">
+						<li class="list-group-item">Bisexual dating</li>
+						<li class="list-group-item">Pansexual dating</li>
+						<li class="list-group-item">Trans dating</li>
+						<li class="list-group-item">Latina dating</li>
+						<li class="list-group-item">Asexual dating</li>
+						<li class="list-group-item">QPOC womxn</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-12 col-md-3">
+					<h4>Supports & legals</h4>
+					<ul class="list-group">
+						<li class="list-group-item">Support</li>
+						<li class="list-group-item">Community guidelines</li>
+						<li class="list-group-item">Terms of service</li>
+					</ul>
+					<h4>Add us on socials</h4>
+					<ul class="list-inline">
+						<li><a href="#"><img src="./img/tiktok-icon.svg" alt=""></a></li>
+						<li><a href="#"><img src="./img/youtube-icon.svg" alt=""></a></li>
+						<li><a href="#"><img src="./img/twitter-icon.svg" alt=""></a></li>
+						<li><a href="#"><img src="./img/instagram-icon.svg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer><!-- End of footer -->
+
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" defer></script>
