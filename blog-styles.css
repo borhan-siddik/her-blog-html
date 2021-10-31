@@ -148,10 +148,10 @@
 	border-radius: 8px;
 }
 
-.bs-hero-card .carousel-inner .item > img {
+.bs-hero-card .carousel-inner .item a > img {
 	width:100%;
 	max-width:1040px;
-	height:378px!important;
+	height:378px;
 	object-fit: cover;
 	object-position: center center;
 }
@@ -179,7 +179,7 @@
 }
 
 .bs-hero-card .caro-card-footer {
-	padding: 30px;
+	padding: 35px;
 }
 
 .cat-rt li, .auth-date li {
@@ -203,24 +203,23 @@
 
 .bs-hero-card h2 {
 	font-size: 32px;
-	line-height: 32px;
+	line-height: 42px;
 	color: #000;
 	margin-top: -3px;
-	margin-bottom: 18px;
+	margin-bottom: 12px;
 }
 
 /* Blog section styles */
 
-.bs-blog-section .post-inner img {
+.bs-blog-section .post-inner > a img {
 	width:100%;
 	max-width:504px;
-	height: 376px;
 	object-fit: cover;
 	object-position: center center;
 	border-radius: 8px 8px 0 0;
 }
 
-.bs-blog-section .make-it-hero img {
+.bs-blog-section .make-it-hero a > img {
 	max-width: 1040px;
 }
 
@@ -234,12 +233,12 @@
 }
 
 .bs-blog-section .post-card-footer {
-	padding: 20px;
+	padding: 30px;
 }
 
 .bs-blog-section h2 {
 	font-size: 24px;
-	line-height: 28px;
+	line-height: 32px;
 	color: #000;
 	margin-top: -3px;
 	margin-bottom: 12px;
@@ -346,6 +345,14 @@
 		margin-top: 30px;
 	}
 
+	.bs-hero-card .caro-card-footer {
+		padding: 30px;
+	}
+
+	.bs-hero-card .carousel-inner .item a > img {
+		height: 285px;
+	}
+
 	.bs-blog-categories {
 		display: flex;
 		flex-wrap: nowrap;
@@ -366,6 +373,10 @@
 		white-space: nowrap;
 	}
 
+	.bs-blog-section .post-inner > a img {
+		height: 270px;
+	}
+
 	.distributed-padding {
 		float: none;
 		margin: 0 auto;
@@ -377,12 +388,16 @@
 	.custom-blog-footer .row > div {
 		padding: 5%;
 	}
+	
 }
 
 
 @media(min-width:768px) {
 	.custom-blog-footer .row > div:nth-child(2) {
 		padding-left: 4%;
+	}
+	.bs-blog-section .post-inner > a img {
+		height: 270px;
 	}
 }
 
@@ -391,10 +406,16 @@
 	.custom-blog-footer .row > div:not(:first-child) {
 		padding-left: 4%;
 	}
+	.bs-blog-section .post-inner > a img {
+		height: 325px;
+	}
 }
 
 @media(min-width:1200px) {
 	.custom-blog-footer .row > div:not(:first-child) {
 		padding-left: 7%;
+	}
+	.bs-blog-section .post-inner > a img {
+		height: 360px;
 	}
 }
