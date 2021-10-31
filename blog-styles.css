@@ -24,28 +24,9 @@
 }
 
 @font-face {
-    font-family: 'League Spartan';
-    src: url('./fonts/LeagueSpartan/LeagueSpartan-Extralight.woff2') format('woff2'),
-        url('/fonts/LeagueSpartan/LeagueSpartan-Extralight.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'League Spartan';
-    src: url('./fonts/LeagueSpartan-bold/LeagueSpartan-Bold.woff2') format('woff2'),
-        url('/fonts/LeagueSpartan-bold/LeagueSpartan-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Swis721 Cn BT';
-    src: url('./Swiss721BT-BoldCondensed.woff2') format('woff2'),
-        url('Swiss721BT-BoldCondensed.woff') format('woff');
-    font-weight: bold;
+    font-family: 'Spartan';
+    src: url('./fonts/spartan/Spartan-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
@@ -62,13 +43,16 @@
 	background: linear-gradient(180deg, rgba(237, 217, 171, 0.55) 0%, rgba(237, 198, 171, 0.55) 7.59%, rgba(237, 171, 193, 0.55) 17.88%, rgba(171, 192, 237, 0.55) 30.89%, rgba(171, 235, 237, 0.55) 43.9%, rgba(171, 197, 237, 0.55) 56.36%, rgba(195, 171, 237, 0.55) 68.29%, rgba(237, 171, 193, 0.55) 80.75%, rgba(237, 198, 171, 0.55) 92.13%, rgba(237, 217, 171, 0.55) 104.05%), #FFFFFF;
 	background-repeat: no-repeat;
 	background-size: cover;
-	font-family: 'Spartan', sans-serif!important;
+	font-family: 'Spartan', sans-serif;
 	font-weight: 400;
 }
 
-.bs-blog-archive h1, .bs-blog-archive h2, .bs-blog-archive h3, .bs-blog-archive h4, .bs-blog-archive h5 {
-	font-family: 'League Spartan', sans-serif;
-	font-weight: bold;
+.bs-blog-archive h1 {
+	font-weight: 700;
+}
+
+.bs-blog-archive h2, .bs-blog-archive h3, .bs-blog-archive h4, .bs-blog-archive h5 {
+	font-weight: 600;
 }
 
 .bs-blog-archive .container {
@@ -113,7 +97,7 @@
 }
 
 .custom-blog-header .navbar{
-	min-height: 96px;
+	min-height: 88px;
 	background-color: transparent;
 	margin: 0;
 	max-width: 1070px;
@@ -140,14 +124,13 @@
 }
 
 .custom-blog-header .navbar-default .navbar-collapse {
-	min-height: 96px!important;
+	min-height: 88px!important;
 	border: unset;
 	position:relative;
 }
 
 .custom-blog-header .navbar-nav {
-	margin-top: 22px;
-	margin-bottom: 22px;
+	margin-top: 19px;
 }
 
 /* Top Section styles */
@@ -157,8 +140,6 @@
 }
 .bs-top-section h1 {
 	color: #000;
-	font-size: 56px;
-	line-height: 56px;
 	text-align: center;
 	margin-bottom: 32px;
 }
@@ -209,14 +190,16 @@
 }
 
 .cat-rt li, .auth-date li {
-	font-size: 16px;
-	line-height: 21px;
-	color: var(--her-grey);
+	color: var(--her-black);
 	font-weight: 500;
 }
 
 .auth-date {
 	margin-bottom: 0;
+}
+
+.cat-rt li a {
+	color: var(--her-black);
 }
 
 .auth-date li a {
@@ -226,14 +209,16 @@
 .bs-hero-card .cat-rt li:not(:first-child)::before, .bs-blog-section .cat-rt li:not(:first-child)::before, .bs-hero-card .auth-date li:not(:first-child)::before,  .bs-blog-section .auth-date li:not(:first-child)::before{
 	content: "•";
 	margin-right: 12px;
+	font-weight: 600;
 }
 
 .bs-hero-card h2 {
-	font-size: 32px;
-	line-height: 42px;
-	color: #000;
-	margin-top: -5px;
+	margin-top: -3px;
 	margin-bottom: 16px;
+}
+
+.bs-hero-card h2 a {
+	color: var(--her-black);
 }
 
 /* Blog section styles */
@@ -264,11 +249,13 @@
 }
 
 .bs-blog-section h2 {
-	font-size: 24px;
-	line-height: 32px;
 	color: #000;
-	margin-top: -5px;
+	margin-top: -3px;
 	margin-bottom: 16px;
+}
+
+.bs-blog-section h2 a {
+	color: var(--her-black);
 }
 
 .bs-blog-section .load-btn-col button {
@@ -297,9 +284,8 @@
 }
 
 .newsletter-section .form-group {
-	border-radius: 8px;
 	width: 100%;
-	margin-top: 8px;
+	margin-top: 16px;
 	display: flex;
 	justify-content: center;
 }
@@ -309,13 +295,13 @@
 	border: 1px solid rgba(128, 128, 128, 0.582);
 	border-right: none;
 	border-radius: 8px 0 0 8px;
-	width: 40%;
+	width: 45%;
 }
 
 /* Footer styles */
 	.custom-blog-footer {
-		padding-top: 32px;
-		padding-bottom: 48px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 		border-top: 1px solid rgba(128, 128, 128, 0.582);
 	}
 
@@ -339,15 +325,24 @@
 	}
 
 	.custom-blog-footer p {
-		margin-top: 25px;
-		margin-bottom: 22px;
+		margin-top: 29px;
+		margin-bottom: 28px;
 		font-size: 16px;
-		line-height: 30px;
+		line-height: 34px;
 	}
 
 	.custom-blog-footer li {
-		font-size: 15px;
+		font-size: 16px;
 		line-height: 24px;
+	}
+
+	.custom-blog-footer h4 {
+		color: var(--her-black);
+		margin-bottom: 20px;
+	}
+
+	.custom-blog-footer li a {
+		color: var(--her-grey);
 	}
 
 	.custom-blog-footer .row {
@@ -369,7 +364,7 @@
 		margin-bottom: 22px;
 	}
 	.navbar-default .navbar-toggle {
-		margin-top: 30px;
+		margin-top: 26px;
 	}
 
 	.bs-hero-card .caro-card-footer {
@@ -413,9 +408,42 @@
 		max-width: 1040px;
 	}
 	.custom-blog-footer .row > div {
-		padding: 5%;
+		padding: 1.5% 3%;
 	}
-	
+	.bs-top-section h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	.bs-hero-card h2 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.cat-rt li, .auth-date li {
+		font-size: 13px;
+	}
+	.bs-blog-section h2 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.bs-top-section {
+		padding-top: 46px;
+		padding-bottom: 46px;
+	}
+	.newsletter-section .form-control {
+		width: 70%;
+	}
+	.newsletter-section {
+		padding-top: 40px;
+		padding-bottom: 56px;
+	}
+	.custom-blog-footer li {
+		font-size: 14px;
+	}
+	.custom-blog-footer h4 {
+		font-size: 15px;
+		line-height: 20px;
+	}
 }
 
 
@@ -425,6 +453,21 @@
 	}
 	.bs-blog-section .post-inner > a img {
 		height: 270px;
+	}
+	.bs-hero-card h2 {
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.bs-blog-section h2 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.cat-rt li, .auth-date li {
+		font-size: 14px;
+	}
+	.bs-top-section h1 {
+		font-size: 38px;
+		line-height: 44px;
 	}
 }
 
@@ -436,13 +479,36 @@
 	.bs-blog-section .post-inner > a img {
 		height: 325px;
 	}
+	.bs-hero-card h2 {
+		font-size: 28px;
+		line-height: 34px;
+	}
+	.bs-blog-section h2 {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.cat-rt li, .auth-date li {
+		font-size: 15px;
+	}
+	.bs-top-section h1 {
+		font-size: 42px;
+		line-height: 48px;
+	}
 }
 
 @media(min-width:1200px) {
 	.custom-blog-footer .row > div:not(:first-child) {
-		padding-left: 7%;
+		padding-left: 6.2%;
 	}
 	.bs-blog-section .post-inner > a img {
 		height: 360px;
+	}
+	.cat-rt li, .auth-date li {
+		font-size: 15px;
+		line-height: 21px;
+	}
+	.bs-top-section h1 {
+		font-size: 56px;
+		line-height: 56px;
 	}
 }
